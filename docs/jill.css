@@ -1,0 +1,86 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/jillfamily_lowres.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("images/iphone-notebook-pen-working-34578.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("images/iphone-technology-iphone-6-plus-apple-17663.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* Style for "Skip to Content" links.  */
+.bypass-block-link {
+	position: absolute;
+	text-decoration: none;
+	background: #ffffcc;
+	border-radius: 10px;
+	padding: 0.2em;
+	z-index: 10;
+}
+
+#skipNavLink {
+    color: #000;
+}
+
+.visually-hidden {
+	clip: rect(1px 1px 1px 1px);
+	/* IE 6/7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	margin: -1px;
+}
+
+
+.bypass-block-link:focus {
+	clip: auto;
+	height: auto;
+	overflow: visible;
+	position: absolute;
+	white-space: normal;
+	width: auto;
+	margin: auto;
+	z-index: 10;
+}
+
+.bypass-block-target:focus {
+	outline: none;
+}
